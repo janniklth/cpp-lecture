@@ -12,7 +12,7 @@ To run the project on your local system, please follow these steps:
 
 1. Clone the repository to your computer:  
    ```
-   git clone https://github.com/your-username/CPP-Lecture.git
+   git clone https://github.com/janniklth/cpp-lecture.git
    ```
 
 2. Navigate to the project directory:  

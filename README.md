@@ -1,8 +1,8 @@
 # CPP Lecture
 
-This repository contains my project work for the CPP lecture. The project was developed to showcase my knowledge of the C++ programming language. This readme file provides a brief description of the project and instructions for installation and usage.
+This repository contains my work and exercises for the CPP lecture of my IT-Automotive study. The project and exercises were developed to learn about the C++ programming language and programming basics like clean code, object oriented programming and test driven development. This readme file provides a brief description of the project and instructions for installation and usage.
 
-## Project Description
+## Project Description - NOCH ÄNDERN
 
 The goal of this project is to create a comprehensive C++ application that demonstrates various concepts of the programming language. It consists of a collection of sample programs that illustrate different features and concepts of C++. The examples range from basic constructs like variables and loops to more advanced topics such as inheritance and polymorphism.
 
@@ -45,7 +45,7 @@ The program will start, and you will be provided with instructions for selecting
 
 If you have any suggestions for improvement or bug fixes for this project, please feel free to create a pull request or open an issue on GitHub. I appreciate your contribution!
 
-## License
+## License - NOCH ÄNDERN
 
 This project is licensed under the MIT License. For more information, please see the [LICENSE](LICENSE) file.
 

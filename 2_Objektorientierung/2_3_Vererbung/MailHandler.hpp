@@ -6,9 +6,12 @@
 #define CPP_LECTURE_MAILHANDLER_HPP
 
 
+#include "Person.hpp"
+
 class MailHandler
 {
-
+public:
+    void writeMail(Person receiver, string message);
 };
 
 

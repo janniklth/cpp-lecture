@@ -6,6 +6,7 @@
 #define CPP_LECTURE_PERSON_HPP
 
 #include <string>
+#include <utility>
 
 using namespace std;
 
@@ -18,16 +19,16 @@ public:
 
     // Overloaded Constructor
     Person(string name, string adress, string email)
-        :   m_name(name)
-        ,   m_adress(adress)
-        ,   m_email(email)
+        :   m_name(std::move(name))
+        ,   m_adress(std::move(adress))
+        ,   m_email(std::move(email))
     {};
 
     // Destructor
     ~Person()
     {};
 
-private:
+protected:
     string m_name;
     string m_adress;
     string m_email;

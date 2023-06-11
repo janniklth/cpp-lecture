@@ -23,8 +23,10 @@ int main()
     Professor professor2 = Professor("Michael Brown", "654 Cedar Road", "michael.brown@example.com", "DE987654321");
     Professor professor3 = Professor("Emily Davis", "987 Birch Court", "emily.davis@example.com", "DE456789123");
 
-    // write mails
-
+    // initialise MailHandler and write some mails
+    MailHandler mailHandler;
+    mailHandler.writeMail(student1, "Hello student!");
+    mailHandler.writeMail(professor1, "Hello Professor!");
 
 
     return 0;

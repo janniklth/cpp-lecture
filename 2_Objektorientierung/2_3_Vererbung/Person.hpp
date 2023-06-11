@@ -37,6 +37,7 @@ public:
     // get method for email
     const string &getMEmail() const;;
 
+
 protected:
     string m_name;
     string m_adress;

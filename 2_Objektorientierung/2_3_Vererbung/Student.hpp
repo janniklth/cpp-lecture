@@ -29,6 +29,9 @@ public:
     ~Student()
     {};
 
+    // getMethod for average grade
+    double getMAvgGrade() const;
+
 private:
     double m_avg_grade;
 };

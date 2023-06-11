@@ -3,3 +3,9 @@
 //
 
 #include "Student.hpp"
+
+// getMethod for average grade
+double Student::getMAvgGrade() const
+{
+    return m_avg_grade;
+}

@@ -22,11 +22,20 @@ public:
         :   m_name(std::move(name))
         ,   m_adress(std::move(adress))
         ,   m_email(std::move(email))
-    {};
+    {}
 
     // Destructor
     ~Person()
     {};
+
+    // getMethod for name
+    const string &getMName() const;
+
+    // get method for adress
+    const string &getMAdress() const;
+
+    // get method for email
+    const string &getMEmail() const;;
 
 protected:
     string m_name;

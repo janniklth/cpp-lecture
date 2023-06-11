@@ -29,6 +29,9 @@ public:
    ~Professor()
     {};
 
+   // getMethod for iban
+    const string &getMIban() const;
+
 private:
     string m_iban;
 };

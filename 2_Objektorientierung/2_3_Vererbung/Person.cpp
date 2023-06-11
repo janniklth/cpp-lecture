@@ -3,3 +3,18 @@
 //
 
 #include "Person.hpp"
+
+const string &Person::getMName() const
+{
+    return m_name;
+}
+
+const string &Person::getMAdress() const
+{
+    return m_adress;
+}
+
+const string &Person::getMEmail() const
+{
+    return m_email;
+}

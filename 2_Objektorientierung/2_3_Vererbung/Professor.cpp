@@ -3,3 +3,9 @@
 //
 
 #include "Professor.hpp"
+
+// getMethod for iban
+const string &Professor::getMIban() const
+{
+    return m_iban;
+}

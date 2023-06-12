@@ -12,13 +12,16 @@ include_directories(2_Objektorientierung/2_2_HeaderFiles)
 #        2_Objektorientierung/2_2_HeaderFiles/Vehicle.cpp
 #        2_Objektorientierung/2_2_HeaderFiles/Vehicle.hpp)
 
+#add_executable(code_cpp
+#        2_Objektorientierung/2_3_Vererbung/main.cpp
+#        2_Objektorientierung/2_3_Vererbung/Person.cpp
+#        2_Objektorientierung/2_3_Vererbung/Person.hpp
+#        2_Objektorientierung/2_3_Vererbung/Student.cpp
+#        2_Objektorientierung/2_3_Vererbung/Student.hpp
+#        2_Objektorientierung/2_3_Vererbung/Professor.cpp
+#        2_Objektorientierung/2_3_Vererbung/Professor.hpp
+#        2_Objektorientierung/2_3_Vererbung/MailHandler.cpp
+#        2_Objektorientierung/2_3_Vererbung/MailHandler.hpp)
+
 add_executable(code_cpp
-        2_Objektorientierung/2_3_Vererbung/main.cpp
-        2_Objektorientierung/2_3_Vererbung/Person.cpp
-        2_Objektorientierung/2_3_Vererbung/Person.hpp
-        2_Objektorientierung/2_3_Vererbung/Student.cpp
-        2_Objektorientierung/2_3_Vererbung/Student.hpp
-        2_Objektorientierung/2_3_Vererbung/Professor.cpp
-        2_Objektorientierung/2_3_Vererbung/Professor.hpp
-        2_Objektorientierung/2_3_Vererbung/MailHandler.cpp
-        2_Objektorientierung/2_3_Vererbung/MailHandler.hpp)
+        2_Objektorientierung/2_4_Polymorphismus/main.cpp)

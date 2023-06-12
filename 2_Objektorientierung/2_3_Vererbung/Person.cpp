@@ -22,6 +22,12 @@ const string &Person::getMEmail() const
     return m_email;
 }
 
+// method to get the type of a person
+string Person::get_type() const
+{
+    return "Person";
+}
+
 
 
 

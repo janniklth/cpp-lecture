@@ -32,6 +32,9 @@ public:
     // getMethod for average grade
     double getMAvgGrade() const;
 
+    // override method to get type of person -> here: Student
+    string get_type() const override;
+
 private:
     double m_avg_grade;
 };

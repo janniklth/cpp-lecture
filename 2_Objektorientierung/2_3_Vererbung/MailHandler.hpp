@@ -11,7 +11,7 @@
 class MailHandler
 {
 public:
-    void writeMail(Person receiver, string message);
+    void writeMail(Person& receiver, string message);
 };
 
 

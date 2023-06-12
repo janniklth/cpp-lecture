@@ -32,6 +32,9 @@ public:
    // getMethod for iban
     const string &getMIban() const;
 
+    // override method to get type of person -> here: Professor
+    string get_type() const override;
+
 private:
     string m_iban;
 };

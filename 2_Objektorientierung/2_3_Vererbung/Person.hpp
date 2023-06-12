@@ -25,8 +25,8 @@ public:
     {}
 
     // Destructor
-    ~Person()
-    {};
+    virtual ~Person()
+    = default;;
 
     // getMethod for name
     const string &getMName() const;
@@ -35,7 +35,10 @@ public:
     const string &getMAdress() const;
 
     // get method for email
-    const string &getMEmail() const;;
+    const string &getMEmail() const;
+
+    // method to get the type/role of a person
+    virtual string get_type() const;
 
 
 protected:

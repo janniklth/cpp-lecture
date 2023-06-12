@@ -9,3 +9,9 @@ const string &Professor::getMIban() const
 {
     return m_iban;
 }
+
+// method to get the type of a person
+string Professor::get_type() const
+{
+    return "Professor";
+}

@@ -4,6 +4,7 @@
 
 
 
+#include <vector>
 #include "Place.hpp"
 #include "Sights.hpp"
 #include "Toilets.hpp"
@@ -16,11 +17,18 @@ int main()
     Sights sights1("Eifel Tower", {3, 5}, "All of Paris");
     Toilets toilets1("devils toilet", {4, 1}, "sulfur");
 
+    // store all places in a vector
+    vector<Place> places;
+    places.push_back(place1);
+    places.push_back(sights1);
+    places.push_back(toilets1);
 
-    // visit the place
-    place1.visit();
-    sights1.visit();
-    toilets1.visit();
+    // iterate over all places and visit them
+    for(Place place : places)
+    {
+        place.visit();
+    }
+
 
 
     return 0;

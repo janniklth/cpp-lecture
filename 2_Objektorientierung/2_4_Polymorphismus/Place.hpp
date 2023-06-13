@@ -12,7 +12,8 @@
 using namespace std;
 
 // struct to store coordinates
-struct coordinate {
+struct coordinate
+{
     int x;
     int y;
 };
@@ -27,8 +28,7 @@ public:
 
     // Overloaded Constructor
     Place(string name, coordinate coordinates)
-        :   m_name(std::move(name))
-        , m_coordinates(coordinates)
+            : m_name(std::move(name)), m_coordinates(coordinates)
     {}
 
     // Destructor

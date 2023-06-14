@@ -11,7 +11,7 @@ using namespace std;
 void Toilets::visit() const
 {
     Place::visit();
-    cout << " -> description: " << this->getMSmell() << endl;
+    cout << " -> smell: " << this->getMSmell() << endl;
 }
 
 // getMethod for description

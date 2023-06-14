@@ -18,15 +18,15 @@ int main()
     Toilets toilets1("devils toilet", {4, 1}, "sulfur");
 
     // store all places in a vector
-    vector<Place> places;
-    places.push_back(place1);
-    places.push_back(sights1);
-    places.push_back(toilets1);
+    vector<Place*> places;
+    places.push_back(&place1);
+    places.push_back(&sights1);
+    places.push_back(&toilets1);
 
     // iterate over all places and visit them
-    for(Place place : places)
+    for(Place* place : places)
     {
-        place.visit();
+        place->visit();
     }
 
 

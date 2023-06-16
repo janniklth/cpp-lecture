@@ -8,6 +8,29 @@
 
 class Konto
 {
+public:
+    // default constructor
+    Konto(int bankIdentifierCode)
+            : m_bankIdentifierCode(bankIdentifierCode)
+    {};
+
+    // overloaded constructor
+    Konto(int accountNumber, int bankIdentifierCode, double credit, double interestRate)
+            : m_accountNumber(accountNumber)
+            , m_bankIdentifierCode(bankIdentifierCode)
+            , m_credit(credit)
+            , m_interestRate(interestRate)
+    {};
+
+    // destructor
+    ~Konto()
+    = default;;
+
+private:
+    int m_accountNumber;
+    const int m_bankIdentifierCode;
+    double m_credit;
+    double m_interestRate;
 
 };
 

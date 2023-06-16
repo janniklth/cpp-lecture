@@ -38,4 +38,6 @@ include_directories(2_Objektorientierung/2_2_HeaderFiles)
 #        3_Vertiefung_C++/3_1_weitere_Keywords/3_1_2_User/User.hpp)
 
 add_executable(code_cpp
-        3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/main.cpp)
+        3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/main.cpp
+        3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Konto.cpp
+        3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Konto.hpp)

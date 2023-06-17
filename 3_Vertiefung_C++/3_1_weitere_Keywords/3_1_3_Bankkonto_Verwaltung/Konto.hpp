@@ -6,6 +6,11 @@
 #define CPP_LECTURE_KONTO_HPP
 
 
+#include <iostream>
+
+
+using namespace std;
+
 class Konto
 {
 public:
@@ -25,6 +30,9 @@ public:
     // destructor
     ~Konto()
     = default;;
+
+    // method to print all info about the Konto object
+    void printInfo() const;
 
 private:
     int m_accountNumber;

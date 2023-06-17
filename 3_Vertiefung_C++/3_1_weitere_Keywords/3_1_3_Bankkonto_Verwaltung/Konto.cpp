@@ -14,3 +14,9 @@ void Konto::printInfo() const
     cout << "Zinssatz: " << m_interestRate << endl;
     cout << "- - - - - - - - - - - -\n" << endl;
 }
+
+// method to transaction and pay out money
+void Konto::transaction(double amount)
+{
+    m_credit += amount;
+}

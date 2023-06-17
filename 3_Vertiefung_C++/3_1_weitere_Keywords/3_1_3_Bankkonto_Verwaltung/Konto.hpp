@@ -36,8 +36,12 @@ public:
     ~Konto()
     = default;;
 
-    // method to print all info about the Konto object
+    /// method to print all info about the Konto object
     void printInfo() const;
+
+    /// method to transaction and pay out money
+    /// @param amount: amount of money to deposit, positive => transaction, negative => pay out
+    void transaction(double amount);
 
 private:
     int m_accountNumber;

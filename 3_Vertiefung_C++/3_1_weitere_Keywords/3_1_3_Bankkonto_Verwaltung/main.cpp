@@ -18,6 +18,14 @@ int main() {
     konto1.printInfo();
     konto2.printInfo();
 
+    // transaction and pay out money
+    konto1.transaction(10);
+    konto2.transaction(-10);
+
+    // print info about the Konto objects
+    konto1.printInfo();
+    konto2.printInfo();
+
     return 0;
 }
 

@@ -10,8 +10,8 @@
 int main() {
 
     // initialize a some Konto objects
-    Konto konto1(12345678, 12345678, 1000, 0.01);
-    Konto konto2(87654321, 87654321, 1000, 0.01);
+    Konto konto1(12345678, 1000, 0.01);
+    Konto konto2(87654321, 1000, 0.01);
 
 
     // print info about the Konto objects

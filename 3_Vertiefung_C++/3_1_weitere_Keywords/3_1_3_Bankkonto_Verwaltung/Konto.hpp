@@ -7,6 +7,7 @@
 
 
 #include <iostream>
+#include <random>
 
 
 using namespace std;
@@ -20,12 +21,16 @@ public:
     {};
 
     // overloaded constructor
-    Konto(int accountNumber, int bankIdentifierCode, double credit, double interestRate)
-            : m_accountNumber(accountNumber)
-            , m_bankIdentifierCode(bankIdentifierCode)
+    Konto(int bankIdentifierCode, double credit, double interestRate)
+            : m_bankIdentifierCode(bankIdentifierCode)
             , m_credit(credit)
             , m_interestRate(interestRate)
-    {};
+    {
+        random_device device;
+        mt19937 generator(device());
+        uniform_int_distribution<int> distribution(100000, 999999);
+        m_accountNumber = distribution(generator);
+    };
 
     // destructor
     ~Konto()

@@ -12,6 +12,15 @@
 
 using namespace std;
 
+// enum for the different account types
+enum class AccountType
+{
+    Girokonto,
+    Tagesgeldkonto,
+    Bausparvertrag
+};
+
+
 class Konto
 {
 public:
@@ -22,7 +31,8 @@ public:
 
     // overloaded constructor
     Konto(int bankIdentifierCode, double credit, double interestRate)
-            : m_bankIdentifierCode(bankIdentifierCode)
+            : m_accountType(AccountType::Girokonto)
+            , m_bankIdentifierCode(bankIdentifierCode)
             , m_credit(credit)
             , m_interestRate(interestRate)
     {
@@ -43,8 +53,16 @@ public:
     /// @param amount: amount of money to deposit, positive => transaction, negative => pay out
     void transaction(double amount);
 
+
+    /// method to convert the account type to a string
+    /// @param accountType: account type to convert
+    /// @return string of the account type
+    static string accountTypeToString(AccountType accountType);
+
+
 private:
     int m_accountNumber;
+    AccountType m_accountType;
     const int m_bankIdentifierCode;
     double m_credit;
     double m_interestRate;

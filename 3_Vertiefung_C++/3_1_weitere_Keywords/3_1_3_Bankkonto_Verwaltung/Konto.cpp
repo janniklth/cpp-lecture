@@ -9,6 +9,7 @@ void Konto::printInfo() const
 {
     cout << "- - - - - - - - - - - -" << endl;
     cout << "Konto: " << m_accountNumber << endl;
+    cout << "Kontotyp: " << Konto::accountTypeToString(m_accountType) << endl;
     cout << "BIC: " << m_bankIdentifierCode << endl;
     cout << "Kredit: " << m_credit << endl;
     cout << "Zinssatz: " << m_interestRate << endl;
@@ -19,4 +20,19 @@ void Konto::printInfo() const
 void Konto::transaction(double amount)
 {
     m_credit += amount;
+}
+
+// method to convert account type to string
+string Konto::accountTypeToString(AccountType accountType)
+{
+    switch (accountType) {
+        case AccountType::Girokonto:
+            return "Girokonto";
+        case AccountType::Tagesgeldkonto:
+            return "Tagesgeldkonto";
+        case AccountType::Bausparvertrag:
+            return "Bausparvertrag";
+        default:
+            throw runtime_error("Unknown account type");
+    }
 }

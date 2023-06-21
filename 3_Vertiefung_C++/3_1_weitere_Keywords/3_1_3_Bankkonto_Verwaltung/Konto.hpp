@@ -35,7 +35,7 @@ public:
     = default;
 
     /// method to print all info about the Konto object
-    void printInfo() const;
+    virtual void printInfo() const;
 
     /// method to transaction and pay out money
     /// @param amount: amount of money to deposit, positive => transaction, negative => pay out

@@ -27,6 +27,18 @@ public:
     ~Girokonto() override
     {}
 
+    /// method to print all info about an object
+    void printInfo() const override
+    {
+        cout << "- - - - - - - - - - - -" << endl;
+        cout << "Konto: " << m_accountNumber << endl;
+        cout << "BIC: " << m_bankIdentifierCode << endl;
+        cout << "Kredit: " << m_credit << endl;
+        cout << "Zinssatz: " << m_interestRate << endl;
+        cout << "Kontotyp: Girokonto" << endl;
+        cout << "- - - - - - - - - - - -\n" << endl;
+    }
+
     /// method to transaction and pay out money, credit can get negative
     /// @param amount: amount of money to deposit, positive => transaction, negative => pay out
     void transaction(double amount) override

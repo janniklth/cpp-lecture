@@ -36,3 +36,12 @@ string Konto::accountTypeToString(AccountType accountType)
             throw runtime_error("Unknown account type");
     }
 }
+
+// method to generate random account number
+int Konto::generateAccountNumber()
+{
+    random_device device;
+    mt19937 generator(device());
+    uniform_int_distribution<int> distribution(100000, 999999);
+    return distribution(generator);
+}

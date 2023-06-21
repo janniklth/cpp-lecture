@@ -25,8 +25,9 @@ class Konto
 {
 public:
     // default constructor
-    Konto(int bankIdentifierCode)
-            : m_bankIdentifierCode(bankIdentifierCode)
+    Konto()
+            : m_bankIdentifierCode(000000)
+            , m_accountNumber(000000)
     {};
 
     // overloaded constructor
@@ -35,12 +36,8 @@ public:
             , m_bankIdentifierCode(bankIdentifierCode)
             , m_credit(credit)
             , m_interestRate(interestRate)
-    {
-        random_device device;
-        mt19937 generator(device());
-        uniform_int_distribution<int> distribution(100000, 999999);
-        m_accountNumber = distribution(generator);
-    };
+            , m_accountNumber(generateAccountNumber())
+    {};
 
     // destructor
     ~Konto()
@@ -50,7 +47,7 @@ public:
     void printInfo() const;
 
     /// method to transaction and pay out money
-    /// @param amount: amount of money to deposit, positive => transaction, negative => pay out
+    /// @param amount: amount of money to deposit, positive => transaction, negative => pay o
     void transaction(double amount);
 
 
@@ -59,9 +56,13 @@ public:
     /// @return string of the account type
     static string accountTypeToString(AccountType accountType);
 
+    /// method to generate random account number
+    /// @return integer between 100000 and 999999
+    int generateAccountNumber();
+
 
 private:
-    int m_accountNumber;
+    const int m_accountNumber;
     AccountType m_accountType;
     const int m_bankIdentifierCode;
     double m_credit;

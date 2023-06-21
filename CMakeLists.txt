@@ -40,4 +40,4 @@ include_directories(2_Objektorientierung/2_2_HeaderFiles)
 add_executable(code_cpp
         3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/main.cpp
         3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Konto.cpp
-        3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Konto.hpp)
+        3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Konto.hpp 3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Girokonto.cpp 3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Girokonto.hpp 3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Tagesgeld.cpp 3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Tagesgeld.hpp 3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Bausparvertrag.cpp 3_Vertiefung_C++/3_1_weitere_Keywords/3_1_3_Bankkonto_Verwaltung/Bausparvertrag.hpp)

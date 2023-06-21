@@ -5,8 +5,7 @@
 
 #include "User.hpp"
 
-// intialise static member count
-int User::m_count = 0;
+
 
 // main function
 int main()
@@ -22,7 +21,6 @@ int main()
     user2.printId();
     user3.printId();
     user4.printId();
-
 
     return 0;
 }

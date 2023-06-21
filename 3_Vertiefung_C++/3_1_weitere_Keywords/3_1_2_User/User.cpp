@@ -7,6 +7,11 @@
 
 using namespace std;
 
+
+// initialise static member count
+int User::m_count = 1;
+
+
 // method to print a users id
 void User::printId()
 {

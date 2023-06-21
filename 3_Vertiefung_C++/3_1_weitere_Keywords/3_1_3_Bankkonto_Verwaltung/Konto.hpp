@@ -12,14 +12,6 @@
 
 using namespace std;
 
-// enum for the different account types
-enum class AccountType
-{
-    Girokonto,
-    Tagesgeldkonto,
-    Bausparvertrag
-};
-
 
 class Konto
 {
@@ -32,8 +24,7 @@ public:
 
     // overloaded constructor
     Konto(int bankIdentifierCode, double credit, double interestRate)
-            : m_accountType(AccountType::Girokonto)
-            , m_bankIdentifierCode(bankIdentifierCode)
+            : m_bankIdentifierCode(bankIdentifierCode)
             , m_credit(credit)
             , m_interestRate(interestRate)
             , m_accountNumber(generateAccountNumber())
@@ -51,12 +42,6 @@ public:
     virtual void transaction(double amount);
 
 
-    /// method to convert the account type to a string
-    /// @param accountType: account type to convert
-    /// @return string of the account type
-    static string accountTypeToString(AccountType accountType);
-
-
     /// method to generate random account number
     /// @return integer between 100000 and 999999
     int generateAccountNumber();
@@ -72,7 +57,6 @@ public:
 
 protected:
     const int m_accountNumber;
-    AccountType m_accountType;
     const int m_bankIdentifierCode;
     double m_credit;
     double m_interestRate;

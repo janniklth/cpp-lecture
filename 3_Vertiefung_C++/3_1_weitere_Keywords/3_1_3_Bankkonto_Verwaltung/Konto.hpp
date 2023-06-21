@@ -44,7 +44,7 @@ public:
 
     // destructor
     ~Konto()
-    = default;;
+    = default;
 
     /// method to print all info about the Konto object
     void printInfo() const;
@@ -66,7 +66,6 @@ private:
     const int m_bankIdentifierCode;
     double m_credit;
     double m_interestRate;
-
 };
 
 

@@ -45,7 +45,7 @@ The program will start, and you will be provided with instructions for selecting
 
 If you have any suggestions for improvement or bug fixes for this project, please feel free to create a pull request or open an issue on GitHub. I appreciate your contribution!
 
-## License - NOCH ÄNDERN
+## License
 
 This project is licensed under the MIT License. For more information, please see the [LICENSE](LICENSE) file.
 

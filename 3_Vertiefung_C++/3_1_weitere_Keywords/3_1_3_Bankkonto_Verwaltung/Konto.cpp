@@ -45,3 +45,14 @@ int Konto::generateAccountNumber()
     uniform_int_distribution<int> distribution(100000, 999999);
     return distribution(generator);
 }
+// method to return actual credit
+const double Konto::getMCredit() const
+{
+    return m_credit;
+}
+
+// method to return the accoutn number
+const int Konto::getMAccountNumber() const
+{
+    return m_accountNumber;
+}

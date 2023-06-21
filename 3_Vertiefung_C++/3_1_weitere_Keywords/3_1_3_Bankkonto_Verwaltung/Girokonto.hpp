@@ -6,9 +6,44 @@
 #define CPP_LECTURE_GIROKONTO_HPP
 
 
-class Girokonto
-{
+#include "Konto.hpp"
 
+using namespace std;
+
+class Girokonto : public Konto
+{
+public:
+    // default constructor
+    Girokonto()
+    {};
+
+    // overloaded constructor
+    Girokonto(int bankIdentifierCode, double credit, double interestRate, int dispo)
+        : Konto(bankIdentifierCode, credit, interestRate)
+        , m_dispo(dispo)
+    {};
+
+    // destructor
+    ~Girokonto() override
+    {}
+
+    /// method to transaction and pay out money, credit can get negative
+    /// @param amount: amount of money to deposit, positive => transaction, negative => pay out
+    void transaction(double amount) override
+    {
+        // check if there is enough money on the account
+        if (Konto::getMCredit() + amount >= -m_dispo)
+        {
+            Konto::transaction(amount);
+        }
+        else
+        {
+            cout << "WARNING: accountNumber: " << Konto::generateAccountNumber() << " has not enough money available" << endl;
+        }
+    }
+
+private:
+    int m_dispo;
 };
 
 

@@ -40,15 +40,15 @@ public:
     {};
 
     // destructor
-    ~Konto()
+    virtual ~Konto()
     = default;
 
     /// method to print all info about the Konto object
     void printInfo() const;
 
     /// method to transaction and pay out money
-    /// @param amount: amount of money to deposit, positive => transaction, negative => pay o
-    void transaction(double amount);
+    /// @param amount: amount of money to deposit, positive => transaction, negative => pay out
+    virtual void transaction(double amount);
 
 
     /// method to convert the account type to a string
@@ -56,12 +56,21 @@ public:
     /// @return string of the account type
     static string accountTypeToString(AccountType accountType);
 
+
     /// method to generate random account number
     /// @return integer between 100000 and 999999
     int generateAccountNumber();
 
+    // GetMethod to return actual credit
+    const double getMCredit() const;
 
-private:
+    // GetMethod to return the ID
+    const int getMAccountNumber() const;
+
+
+
+
+protected:
     const int m_accountNumber;
     AccountType m_accountType;
     const int m_bankIdentifierCode;
